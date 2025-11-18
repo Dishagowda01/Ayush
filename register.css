@@ -1,0 +1,232 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f6fc;
+    padding: 20px;
+}
+
+/* ---------------- HEADER ---------------- */
+.header-wrapper {
+    margin-left: 400px;    /* Moves title + arrow block right side */
+    margin-bottom: 20px;
+}
+
+
+/* Title bar (arrow + text) */
+.title-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the heading + arrow */
+    gap: 12px;
+    padding: 10px 0;
+    margin-right: 250px;
+}
+
+.subtitle {
+    text-align: center; /* Center subtitle */
+    margin-top: 5px;
+    margin-right: 250px;
+}
+
+/* Back button */
+.back-btn {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    flex-shrink: 0; /* Prevent squeezing */
+}
+
+.back-btn:hover {
+    color: #000;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #555;
+    font-size: 1rem;
+}
+
+
+/* ---------------- CONTAINER ---------------- */
+.container {
+    width: 100%;
+    max-width: 700px;
+    background: #fff;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-top: 30px; /* Header will sit above this */
+}
+
+
+
+.container h2 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    color: #03682e;
+}
+
+.container p {
+    color: #555;
+    margin-bottom: 20px;
+}
+#email-section {
+    display: none; /* Hides email verification initially */
+}
+
+
+/* Sections */
+.section {
+    margin-bottom: 30px;
+}
+
+.section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #03682e;
+}
+
+
+label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+    color: #444343;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* OTP buttons */
+.otp-btn {
+    background: #03682e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.otp-btn:hover {
+    background: #03682e;
+}
+
+/* Two-column layout */
+.row {
+    display: flex;
+    gap: 15px;
+}
+
+.col {
+    flex: 1;
+}
+
+/* Textarea */
+textarea {
+    min-height: 100px;
+}
+
+/* Submit button */
+.submit-btn {
+    width: 100%;
+    background: #03682e;
+    color: white;
+    padding: 14px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background: #028139;
+}
+
+/* ---------------- MOBILE RESPONSIVE ---------------- */
+@media (max-width: 600px) {
+
+    .header-wrapper {
+        margin-left: 20px;    /* Prevents overflow on small screens */
+    }
+
+    .back-btn {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .container {
+        padding: 18px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+   /* Keep OTP section hidden initially */
+.otp-hidden {
+    display: none;
+}
+
+/* Styling for buttons (optional, modify as needed) */
+.send-otp-btn, .verify-btn {
+    background: #009933;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.send-otp-btn:hover,
+.verify-btn:hover {
+    background: #007a29;
+}
+
+ .same-address {
+    display: inline-flex !important;   /* forces single line */
+    align-items: center !important;
+    gap: 8px !important;
+    width: auto !important;
+    white-space: nowrap !important;    /* prevents wrapping */
+    margin: 15px 0;
+    margin-top: 100px;
+}
+
+.same-address input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0 !important;         /* prevent shrinking */
+    accent-color: #0f7b2d;
+    margin-top: 100px;
+}
+
+
+}

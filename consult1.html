@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patient Registration</title>
+    <link rel="stylesheet" href="consult1design.css" />
+</head>
+
+<body>
+
+<header class="top-header">
+    <a href="home.html" class="logo-box">
+        <img src="Images/ayushlogo.png" alt="AYUSH Logo">
+    </a>
+
+    <div class="logo">AYUSH Platform</div>
+    <div class="page-title">Patient Registration</div>
+</header>
+
+
+<div class="container">
+    <h1>Patient Registration</h1>
+
+    <!-- STEP SECTION (Now left-side) -->
+    <div class="step-section">
+        <div class="step-text">Step 1 of 7</div>
+
+        <div class="step-progress">
+            <div class="step-fill" id="stepFill"></div>
+        </div>
+    </div>
+    <!-- TAB MENU -->
+   <nav class="tabs">
+    <button class="tab active">Personal Information</button>
+    <button class="tab">Lifestyle & Social History</button>
+    <button class="tab">Medical History</button>
+    <button class="tab">Current Health Status</button>
+    <button class="tab">Psychometric Assessment</button>
+    <button class="tab">AYUSH Profile</button>
+    <button class="tab">Image Capture</button>
+</nav>
+
+
+
+    <!-- FORM CARD -->
+    <section class="form-card">
+
+        <h2>Personal Information</h2>
+        <p class="subtitle">Please fill out all required fields to continue</p>
+
+        <form>
+
+            <div class="grid-2">
+                <div>
+                    <label>Full Name *</label>
+                    <input type="text" placeholder="Enter your full name" required>
+                </div>
+
+                <div>
+                    <label>Date of Birth *</label>
+                    <input type="date" required>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div>
+                    <label>Gender *</label>
+                    <select required>
+                        <option value="">Select gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Marital Status *</label>
+                    <select required>
+                        <option value="">Select status</option>
+                        <option>Single</option>
+                        <option>Married</option>
+                        <option>Divorced</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div>
+                    <label>Occupation</label>
+                    <input type="text" placeholder="Your occupation">
+                </div>
+
+                <div>
+                    <label>Education Level</label>
+                    <select>
+                        <option value="">Select education level</option>
+                        <option>High School</option>
+                        <option>Bachelor’s</option>
+                        <option>Master’s</option>
+                        <option>Doctorate</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="grid-2">
+                <div>
+                    <label>Phone Number *</label>
+                    <input type="tel" placeholder="+1 (555) 000-0000" required>
+                </div>
+
+                <div>
+                    <label>Email Address *</label>
+                    <input type="email" placeholder="your.email@example.com" required>
+                </div>
+            </div>
+
+            <div>
+                <label>Address</label>
+                <textarea placeholder="Your complete address"></textarea>
+            </div>
+
+            <div class="form-footer">
+     <button type="button" class="btn-secondary" id="nextBtn" onclick="window.location.href='index.html'">Back</button>
+    <button type="button" class="btn-primary" id="nextBtn" onclick="window.location.href='consult2.html'">Next →</button>
+</div>
+
+
+        </form>
+
+    </section>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Patient Registration</title>
+<link rel="stylesheet" href="consult4design.css" />
+</head>
+<body>
+
+<header class="top-header">
+    <a href="home.html" class="logo-box">
+        <img src="Images/ayushlogo.png" alt="AYUSH Logo">
+    </a>
+
+    <div class="logo">AYUSH Platform</div>
+    <div class="page-title">Patient Registration</div>
+</header>
+<div class="container">
+    <h1>Patient Registration</h1>
+
+    <!-- STEP SECTION (Now left-side) -->
+    <div class="step-section">
+        <div class="step-text">Step 4 of 7</div>
+
+        <div class="step-progress">
+            <div class="step-fill" id="stepFill"></div>
+        </div>
+    </div>
+    <!-- TAB MENU -->
+   <nav class="tabs">
+    <button class="tab active">Personal Information</button>
+    <button class="tab active">Lifestyle & Social History</button>
+    <button class="tab active">Medical History</button>
+    <button class="tab active">Current Health Status</button>
+    <button class="tab">Psychometric Assessment</button>
+    <button class="tab">AYUSH Profile</button>
+    <button class="tab">Image Capture</button>
+</nav>
+    <div class="form-card">
+        <h3>Current Health Status</h3>
+        <p class="subtitle">Please fill out all required fields to continue</p>
+
+        <div class="grid-3">
+            <div>
+                <label>Height (cm) *</label>
+                <input type="number" placeholder="170" />
+            </div>
+            <div>
+                <label>Weight (kg) *</label>
+                <input type="number" placeholder="70" />
+            </div>
+            <div>
+                <label>BMI</label>
+                <input type="text" placeholder="Calculated automatically" disabled />
+            </div>
+        </div>
+
+        <div class="grid-3">
+            <div>
+                <label>Blood Pressure</label>
+                <input type="text" placeholder="120/80 mmHg" />
+            </div>
+            <div>
+                <label>Pulse Rate</label>
+                <input type="text" placeholder="72 bpm" />
+            </div>
+            <div>
+                <label>Temperature</label>
+                <input type="text" placeholder="98.6°F" />
+            </div>
+        </div>
+
+        <div class="grid-1">
+            <label>Present Symptoms</label>
+            <textarea placeholder="Describe any current symptoms, their duration, frequency, and severity"></textarea>
+        </div>
+
+        <div class="grid-1">
+            <label>Pain Areas or Physical Discomfort</label>
+            <textarea placeholder="Describe any pain or discomfort, location, intensity (1-10 scale)"></textarea>
+        </div>
+
+        <div class="grid-1">
+            <label>Menstrual / Reproductive Health</label>
+            <textarea placeholder="For females: menstrual cycle details, irregularities, etc. For males: reproductive health concerns"></textarea>
+        </div>
+
+        <h3>Mental Health Status</h3>
+
+        <div class="grid-3">
+            <div>
+                <label>Stress Level</label>
+                <select>
+                    <option>Rate stress</option>
+                </select>
+            </div>
+            <div>
+                <label>Depression</label>
+                <select>
+                    <option>Rate depression</option>
+                </select>
+            </div>
+            <div>
+                <label>Anxiety</label>
+                <select>
+                    <option>Rate anxiety</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-footer">
+ <button type="button" class="btn-secondary" id="nextBtn" onclick="window.location.href='consult3.html'">Previous</button>
+    <button type="button" class="btn-primary" id="nextBtn" onclick="window.location.href='consult5.html'">Next →</button>
+</div>
+    </div>
+</div>
+
+</body>
+</html>

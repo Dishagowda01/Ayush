@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYUSH Platform - Patient Registration</title>
+    <link rel="stylesheet" href="consult3design.css">
+</head>
+
+<body>
+
+<!-- TOP HEADER -->
+<header class="top-header">
+    <a href="home.html" class="logo-box">
+        <img src="Images/ayushlogo.png" alt="AYUSH Logo">
+    </a>
+
+    <div class="logo">AYUSH Platform</div>
+    <div class="page-title">Patient Registration</div>
+</header>
+<div class="container">
+    <h1>Patient Registration</h1>
+
+    <!-- STEP SECTION (Now left-side) -->
+    <div class="step-section">
+        <div class="step-text">Step 3 of 7</div>
+
+        <div class="step-progress">
+            <div class="step-fill" id="stepFill"></div>
+        </div>
+    </div>
+    <!-- TAB MENU -->
+   <nav class="tabs">
+    <button class="tab active">Personal Information</button>
+    <button class="tab active">Lifestyle & Social History</button>
+    <button class="tab active">Medical History</button>
+    <button class="tab">Current Health Status</button>
+    <button class="tab">Psychometric Assessment</button>
+    <button class="tab">AYUSH Profile</button>
+    <button class="tab">Image Capture</button>
+</nav>
+
+    <!-- CARD -->
+    <div class="form-card">
+
+        <h3>Medical History</h3>
+        <p class="subtitle">Please fill out all required fields to continue</p>
+
+        <!-- Past Medical Conditions -->
+        <div class="grid-1">
+            <label>Past Medical Conditions</label>
+
+            <div>
+                <label><input type="checkbox"> Diabetes</label><br>
+                <label><input type="checkbox"> Hypertension</label><br>
+                <label><input type="checkbox"> Heart Disease</label><br>
+                <label><input type="checkbox"> Asthma</label><br>
+                <label><input type="checkbox"> Other</label>
+            </div>
+
+            <textarea placeholder="Please specify other conditions and details"></textarea>
+        </div>
+
+        <!-- Current Medications -->
+        <div class="grid-1">
+            <label>Current Medications or Treatment</label>
+            <textarea placeholder="List all current medications with dosage and frequency"></textarea>
+        </div>
+
+        <!-- Surgeries -->
+        <div class="grid-1">
+            <label>Past Surgeries or Hospitalizations</label>
+            <textarea placeholder="Include dates and reasons for surgeries/hospitalizations"></textarea>
+        </div>
+
+        <!-- Allergies -->
+        <h3>Allergies</h3>
+
+        <div class="grid-1">
+            <label>Food Allergies</label>
+            <textarea placeholder="List any food allergies"></textarea>
+        </div>
+
+        <div class="grid-1">
+            <label>Drug Allergies</label>
+            <textarea placeholder="List any drug allergies"></textarea>
+        </div>
+
+        <div class="grid-1">
+            <label>Environmental Allergies</label>
+            <textarea placeholder="List any environmental allergies"></textarea>
+        </div>
+
+        <!-- Family History -->
+        <div class="grid-1">
+            <label>Family History of Diseases</label>
+
+            <div>
+                <label><input type="checkbox"> Cardiac Disease</label><br>
+                <label><input type="checkbox"> Diabetes</label><br>
+                <label><input type="checkbox"> Cancer</label><br>
+                <label><input type="checkbox"> Genetic Disorders</label>
+            </div>
+
+            <textarea placeholder="Please specify family medical history details"></textarea>
+        </div>
+
+        <!-- Vaccination -->
+        <div class="grid-1">
+            <label>Vaccination Status</label>
+
+            <div>
+                <label><input type="checkbox"> COVID-19</label><br>
+                <label><input type="checkbox"> Hepatitis</label><br>
+                <label><input type="checkbox"> Flu</label>
+            </div>
+
+            <textarea placeholder="Please specify vaccination dates and details"></textarea>
+        </div>
+
+        <!-- Infections -->
+        <div class="grid-1">
+            <label>History of Infections</label>
+
+            <div>
+                <label><input type="checkbox"> Tuberculosis</label><br>
+                <label><input type="checkbox"> Hepatitis</label><br>
+                <label><input type="checkbox"> HIV</label>
+            </div>
+
+            <textarea placeholder="Please specify infection history and treatment details"></textarea>
+        </div>
+
+        <!-- LMP -->
+        <div class="grid-1">
+            <label>Last Menstrual Period (LMP)</label>
+            <input type="text" placeholder="dd-mm-yyyy">
+        </div>
+
+        <!-- Reproductive History -->
+        <div class="grid-1">
+            <label>Reproductive Health History</label>
+            <textarea placeholder="Include obstetric/gynecologic history, pregnancies, etc."></textarea>
+        </div>
+
+        <!-- Buttons -->
+       <div class="form-footer">
+ <button type="button" class="btn-secondary" id="nextBtn" onclick="window.location.href='consult2.html'">Previous</button>
+    <button type="button" class="btn-primary" id="nextBtn" onclick="window.location.href='consult4.html'">Next →</button>
+</div>
+
+    </div>
+</div>
+
+</body>
+</html>

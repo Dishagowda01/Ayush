@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AYUSH Profile</title>
+<link rel="stylesheet" href="consult6design.css" />
+</head>
+
+<body>
+
+<!-- TOP HEADER -->
+<header class="top-header">
+    <a href="home.html" class="logo-box">
+        <img src="Images/ayushlogo.png" alt="AYUSH Logo">
+    </a>
+
+    <div class="logo">AYUSH Platform</div>
+    <div class="page-title">Patient Registration</div>
+</header>
+
+<!-- MAIN CONTAINER -->
+<div class="main-container">
+    <h1>Patient Registration</h1>
+
+    <!-- STEP SECTION (Now left-side) -->
+    <div class="step-section">
+        <div class="step-text">Step 6 of 7</div>
+
+        <div class="step-progress">
+            <div class="step-fill" id="stepFill"></div>
+        </div>
+    </div>
+    <!-- TAB MENU -->
+   <nav class="tabs">
+    <button class="tab active">Personal Information</button>
+    <button class="tab active">Lifestyle & Social History</button>
+    <button class="tab active">Medical History</button>
+    <button class="tab active">Current Health Status</button>
+    <button class="tab active">Psychometric Assessment</button>
+    <button class="tab active">AYUSH Profile</button>
+    <button class="tab">Image Capture</button>
+</nav>
+
+    <!-- WHITE CARD -->
+    <div class="card">
+        
+        <div class="card-title">
+            <span class="icon"></span> AYUSH Profile
+        </div>
+        <p class="card-subtitle">Please fill out all required fields to continue</p>
+
+        <!-- PRAKRITI / DOSHA -->
+        <h3 class="section-title">Prakriti / Dosha Analysis</h3>
+
+        <div class="three-grid">
+            <div class="input-block">
+                <label>Vata Score</label>
+                <input type="text" placeholder="0–100">
+            </div>
+            <div class="input-block">
+                <label>Pitta Score</label>
+                <input type="text" placeholder="0–100">
+            </div>
+            <div class="input-block">
+                <label>Kapha Score</label>
+                <input type="text" placeholder="0–100">
+            </div>
+        </div>
+
+        <div class="input-block full">
+            <label>Nadi Pariksha Observations</label>
+            <textarea placeholder="Record pulse examination findings"></textarea>
+        </div>
+
+        <!-- OBSERVATIONS -->
+        <h3 class="section-title">Physical Observations</h3>
+
+        <div class="input-block full">
+            <label>Tongue Observations</label>
+            <textarea placeholder="Color, coating, texture, etc."></textarea>
+        </div>
+
+        <div class="input-block full">
+            <label>Eye Observations</label>
+            <textarea placeholder="Color, clarity, any abnormalities"></textarea>
+        </div>
+
+        <div class="input-block full">
+            <label>Skin Observations</label>
+            <textarea placeholder="Texture, color, moisture, etc."></textarea>
+        </div>
+
+        <!-- CHECKBOX SECTION -->
+        <h3 class="section-title">Current Alternative Therapy Usage</h3>
+
+        <div class="checkbox-list">
+            <label><input type="checkbox"> Yoga</label>
+            <label><input type="checkbox"> Meditation</label>
+            <label><input type="checkbox"> Ayurveda</label>
+            <label><input type="checkbox"> Homeopathy</label>
+            <label><input type="checkbox"> Naturopathy</label>
+            <label><input type="checkbox"> Unani</label>
+            <label><input type="checkbox"> Siddha</label>
+        </div>
+
+        <div class="input-block full">
+            <textarea placeholder="Please specify details about current therapies and their effectiveness"></textarea>
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="form-footer">
+            <button class="btn-secondary" onclick="window.location.href='consult5.html'">← Previous</button>
+            <button class="btn-primary" onclick="window.location.href='consult7.html'">Next →</button>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

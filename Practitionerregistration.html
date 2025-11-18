@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practitioner Registration</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+    <!-- Title Bar -->
+    <div class="title-bar">
+        <a href="index.html" class="back-btn">←</a>
+        <h1>Practitioner Registration</h1>
+    </div>
+    <p class="subtitle">Join Dr. Viki platform as a certified AYUSH practitioner</p>
+
+    <div class="container">
+
+        <h2>Create Your Professional Account</h2>
+        <p>Complete the verification process to access our platform</p>
+
+        <!-- SECTION 1 – MOBILE -->
+        <div class="section otp-box" id="section1">
+            <h3>1. Mobile Number Verification</h3>
+
+            <label>Mobile Number</label>
+            <div class="otp-row">
+                <input type="text" id="mobile" placeholder="Enter 10-digit mobile number">
+                <button class="otp-btn" onclick="sendMobileOtp()">Send OTP</button>
+            </div>
+        </div>
+
+        <!-- SECTION 2 – EMAIL -->
+        <div class="section otp-box disabled" id="section2">
+            <h3>2. Email Address Verification</h3>
+
+            <label>Email Address</label>
+            <div class="otp-row">
+                <input type="email" id="email" placeholder="Enter your email address">
+                <button class="otp-btn" onclick="sendEmailOtp()">Send OTP</button>
+            </div>
+        </div>
+
+        <!-- SECTION 3 – PROFILE -->
+        <div class="section disabled" id="section3">
+            <h3>3. Personal & Professional Information</h3>
+
+            <div class="row">
+                <div class="col">
+                    <label>First Name</label>
+                    <input type="text">
+                </div>
+
+                <div class="col">
+                    <label>Last Name</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <label>Specialisation</label>
+            <select id="spec">
+                <option>Select your specialisation</option>
+                <option>Homeopathy</option>
+                <option>Ayurveda</option>
+                <option>Siddha</option>
+                <option>Unani</option>
+                <option>Naturopathy</option>
+            </select>
+
+            <label>Registration Number</label>
+            <input type="text" placeholder="Enter registration number (max 15 characters)">
+
+            <label>Date of Birth</label>
+            <input type="text" placeholder="dd-mm-yyyy">
+
+            <label>Upload Degree Certificate (PDF only)</label>
+            <input type="file" accept="application/pdf" multiple>
+        </div>
+
+        <!-- SECTION 4 – PHOTO -->
+        <div class="section disabled" id="section4">
+            <h4>Upload Professional Photo</h4>
+            <label>Upload JPG or PNG only</label>
+            <input type="file" accept="image/jpeg, image/png">
+        </div>
+
+        <!-- SECTION 5 – ADDRESS -->
+        <div class="section disabled" id="section5">
+            <h4>Address Details</h4>
+
+            <label>Current Address</label>
+            <textarea placeholder="Enter your current address"></textarea>
+
+            <div class="row">
+                <div class="col">
+                    <label>Select State</label>
+                    <input type="text" placeholder="Select your state">
+                </div>
+
+                <div class="col">
+                    <label>PIN Code</label>
+                    <input type="text" placeholder="Enter 6-digit PIN code">
+                </div>
+            </div>
+
+            <label class="same-address">
+                <input type="checkbox"> Same as current address
+            </label>
+
+            <label>Permanent Address</label>
+            <textarea placeholder="Enter your permanent address"></textarea>
+        </div>
+
+        <!-- SUBMIT -->
+        <button id="submitBtn" class="submit-btn" disabled style="opacity:0.5;">
+            Complete Registration
+        </button>
+
+    </div>
+
+<script>
+    // Auto-verifying OTP since input is removed
+    let mobileVerified = false;
+    let emailVerified = false;
+
+    function sendMobileOtp() {
+        let mobile = document.getElementById("mobile").value;
+        if (mobile.length === 10) {
+            alert("OTP sent! Auto-verifying mobile number...");
+            mobileVerified = true;
+
+            // enable Section 2
+            document.getElementById("section2").classList.remove("disabled");
+
+        } else {
+            alert("Enter valid 10-digit number");
+        }
+    }
+
+    function sendEmailOtp() {
+        let email = document.getElementById("email").value;
+        if (email.includes("@")) {
+            alert("OTP sent! Auto-verifying email...");
+            emailVerified = true;
+
+            // Enable next sections
+            document.getElementById("section3").classList.remove("disabled");
+            document.getElementById("section4").classList.remove("disabled");
+            document.getElementById("section5").classList.remove("disabled");
+
+            // Enable submit button
+            let btn = document.getElementById("submitBtn");
+            btn.disabled = false;
+            btn.style.opacity = "1";
+
+        } else {
+            alert("Enter valid email address");
+        }
+    }
+</script>
+
+</body>
+</html>
